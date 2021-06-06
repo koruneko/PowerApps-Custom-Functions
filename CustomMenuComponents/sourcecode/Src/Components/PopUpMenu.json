@@ -1,0 +1,193 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "PopUpMenu",
+    "TemplateGuid": "42e494f8c7524b8587da678504387d3a"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "BackGroundFill",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "BackGroundFill",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Background color",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "BackGroundBorderColor",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "BackGroundBorderColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Outer frame color",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "BackGroundBorderThickness",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "BackGroundBorderThickness",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Outer frame line thickness",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "OKMessage",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "OKMessage",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Displayed on the OK button",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "OKButtonFill",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "OKButtonFill",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Background color of OK button",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "OKButtonColor",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "OKButtonColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Font color of OK button",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "CancelMessage",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "CancelMessage",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Displayed on the Cancel button",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "CancelButtonFill",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "CancelButtonFill",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Background color of Cancel button",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "CancelButtonColor",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "CancelButtonColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Font color of OK button",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TitleMessage",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TitleMessage",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Title message",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TitleMessageColor",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TitleMessageColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Color of title message",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TitleMessageFontSize",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TitleMessageFontSize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Font size of title message",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "BodyMessage",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "BodyMessage",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Body message",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "BodyMessageColor",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "BodyMessageColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Color of body message",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "BodyMessageFontSize",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "BodyMessageFontSize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Font size of body message",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 2,
+      "DisplayName": "OnSelectOK",
+      "Hidden": false,
+      "Name": "OnSelectOK",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "OK button behavior",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 2,
+      "DisplayName": "OnSelectCancel",
+      "Hidden": false,
+      "Name": "OnSelectCancel",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Cancel button behavior",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPremiumPcfControl": false,
+  "LastModifiedTimestamp": "637580335797089261",
+  "Name": "42e494f8c7524b8587da678504387d3a",
+  "OverridableProperties": {},
+  "Version": "637580615389836628"
+}

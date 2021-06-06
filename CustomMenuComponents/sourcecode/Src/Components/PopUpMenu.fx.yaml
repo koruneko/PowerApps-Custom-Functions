@@ -1,0 +1,78 @@
+PopUpMenu As CanvasComponent:
+    BackGroundBorderColor: =ColorFade(Self.BackGroundFill, -25%)
+    BackGroundBorderThickness: =10
+    BackGroundFill: =RGBA(235, 230, 230, 1)
+    BodyMessage: ="This is sample popup menu custom component."
+    BodyMessageColor: =RGBA(0, 0, 0, 1)
+    BodyMessageFontSize: =20
+    CancelButtonColor: =RGBA(255, 255, 255, 1)
+    CancelButtonFill: =RGBA(168, 168, 168, 1)
+    CancelMessage: ="Cancel"
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =320
+    OKButtonColor: =RGBA(255, 255, 255, 1)
+    OKButtonFill: =RGBA(0, 207, 10, 1)
+    OKMessage: ="OK"
+    OnSelectCancel: ="テキスト"
+    OnSelectOK: ="テキスト"
+    TitleMessage: ="Sample PopUp Menu"
+    TitleMessageColor: =RGBA(0, 0, 0, 1)
+    TitleMessageFontSize: =30
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    PopUpMenu_BackGround As rectangle:
+        BorderColor: =Parent.BackGroundBorderColor
+        BorderThickness: =Parent.BackGroundBorderThickness
+        Fill: =Parent.BackGroundFill
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
+    PopUpMenu_OKButton As button:
+        Color: =Parent.OKButtonColor
+        Fill: =Parent.OKButtonFill
+        Height: =Parent.Height / 8
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Parent.OnSelectOK()
+        Text: =Parent.OKMessage
+        Width: =Parent.Width / 4
+        X: =Parent.Width - Self.Width - Parent.BackGroundBorderThickness - 15
+        Y: =Parent.Height - Self.Height - Parent.BackGroundBorderThickness - 15
+        ZIndex: =2
+
+    PopUpMenu_CancelButton As button:
+        Color: =Parent.CancelButtonColor
+        Fill: =Parent.CancelButtonFill
+        Height: =Parent.Height / 8
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Parent.OnSelectCancel()
+        Text: =Parent.CancelMessage
+        Width: =Parent.Width / 4
+        X: =PopUpMenu_OKButton.X - Self.Width - 20
+        Y: =Parent.Height - Self.Height - Parent.BackGroundBorderThickness - 15
+        ZIndex: =3
+
+    PopUpMenu_BodyLbl As label:
+        Color: =Parent.BodyMessageColor
+        Height: =(Parent.Height - Parent.BackGroundBorderThickness * 2) / 3
+        Size: =Parent.BodyMessageFontSize
+        Text: =Parent.BodyMessage
+        Width: =Parent.Width - Parent.BackGroundBorderThickness * 2
+        X: =PopUpMenu_TitleLbl.X
+        Y: =PopUpMenu_TitleLbl.Y + PopUpMenu_TitleLbl.Height + 15
+        ZIndex: =4
+
+    PopUpMenu_TitleLbl As label:
+        Color: =Parent.TitleMessageColor
+        FontWeight: =FontWeight.Semibold
+        Height: =(Parent.Height - Parent.BackGroundBorderThickness * 2) / 3
+        Size: =Parent.TitleMessageFontSize
+        Text: =Parent.TitleMessage
+        Width: =Parent.Width - Parent.BackGroundBorderThickness * 2
+        X: =Parent.BackGroundBorderThickness
+        Y: =Parent.BackGroundBorderThickness
+        ZIndex: =5
+

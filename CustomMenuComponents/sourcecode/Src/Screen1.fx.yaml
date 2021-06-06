@@ -1,0 +1,66 @@
+Screen1 As screen:
+    OnHidden: |-
+        =UpdateContext({isVisiblePopUpMenu:false})
+
+    ScreenLabel_1 As label:
+        Text: ="Screen1"
+        ZIndex: =1
+
+    PopUpMenuBtn As button:
+        OnSelect: |-
+            =UpdateContext({isVisiblePopUpMenu:true})
+        Text: ="PopUpMenu"
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =(Parent.Height - Self.Height) / 2
+        ZIndex: =2
+
+    VerticalListMenuBtn As button:
+        OnSelect: |-
+            =UpdateContext({isVisibleVirticalListMenu:!isVisibleVirticalListMenu})
+        Text: ="VerticalList"
+        Y: =78
+        ZIndex: =3
+
+    HorizonListMenuBtn As button:
+        OnSelect: |-
+            =UpdateContext({isVisibleHorizonListMenu:!isVisibleHorizonListMenu})
+        Text: ="HorizonlList"
+        X: =160
+        Y: =14
+        ZIndex: =4
+
+    VerticalListMenu_1 As VerticalListMenu:
+        ListMenuBehavior: |-
+            =Switch(
+                Self.__Selected_id,
+                1, Navigate(Screen1),
+                2, Navigate(Screen2),
+                3, Navigate(Screen3)
+            )
+        Visible: =isVisibleVirticalListMenu
+        Y: =128
+        ZIndex: =5
+
+    HorizonListMenu_1 As HorizonListMenu:
+        ListMenuBehavior: |-
+            =Switch(
+                Self.__Selected_id,
+                1, Navigate(Screen1),
+                2, Navigate(Screen2),
+                3, Navigate(Screen3)
+            )
+        Visible: =isVisibleHorizonListMenu
+        X: =160
+        Y: =68
+        ZIndex: =6
+
+    PopUpMenu_1 As PopUpMenu:
+        OnSelectCancel: |-
+            =UpdateContext({isVisiblePopUpMenu:false})
+        OnSelectOK: |-
+            =UpdateContext({isVisiblePopUpMenu:false})
+        Visible: =isVisiblePopUpMenu
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =(Parent.Height - Self.Height) / 2
+        ZIndex: =7
+

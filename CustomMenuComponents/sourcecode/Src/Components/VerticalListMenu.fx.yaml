@@ -1,0 +1,112 @@
+VerticalListMenu As CanvasComponent:
+    __Selected_id: =VirticalListMenu_Gallery.Selected._id
+    BackGroundFill: =RGBA(1, 72, 202, 0.2)
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    ListMenuBehavior: |-
+        =Switch(
+            Self.__Selected_id,
+            1, "Sample1",
+            2, "Sample2",
+            3, "Sample3"
+        )
+    ListMenuTitle: |-
+        =Table(
+            {_id:1, Icon:Icon.Edit, Title:"Sample1"},
+            {_id:2, Image:SampleImage, Title:"Sample2"},
+            {_id:3, Title:"Sample3"}
+        )
+    SeparationHeight: =1
+    TitleBackGroundBorderColor: =RGBA(255, 255, 255, 1)
+    TitleBackGroundBorderThickness: =3
+    TitleBackGroundFill: =RGBA(51, 72, 202, 1)
+    TitleColor: =RGBA(255, 255, 255, 1)
+    TitleFontSize: =15
+    Width: =160
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    VirticalListMenu_Gallery As gallery.galleryVertical:
+        Fill: =Parent.BackGroundFill
+        Height: =Parent.Height
+        Items: =Parent.ListMenuTitle
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: |-
+            =// Item Height
+            Parent.TitleBackGroundBorderThickness / 2 + 
+              (Self.Width - Parent.TitleBackGroundBorderThickness) / 4 + 
+                Parent.TitleBackGroundBorderThickness / 2 + 
+                  // Separate thickness
+                  Parent.SeparationHeight
+        Width: =Parent.Width
+        ZIndex: =1
+
+        VirticalListMenu_Separation As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =VerticalListMenu.SeparationHeight
+            OnSelect: =Select(Parent)
+            Width: =Parent.Width
+            Y: =VirticalListMenu_BackGround.Y + VirticalListMenu_BackGround.Height + VirticalListMenu_BackGround.BorderThickness / 2
+            ZIndex: =1
+
+        VirticalListMenu_BackGround As rectangle:
+            BorderColor: =VerticalListMenu.TitleBackGroundBorderColor
+            BorderThickness: =VerticalListMenu.TitleBackGroundBorderThickness
+            Fill: =VerticalListMenu.TitleBackGroundFill
+            Height: =Self.Width / 4
+            OnSelect: =Select(Parent)
+            Width: =Parent.Width - VerticalListMenu.TitleBackGroundBorderThickness
+            X: =VerticalListMenu.TitleBackGroundBorderThickness / 2
+            Y: =VerticalListMenu.TitleBackGroundBorderThickness / 2
+            ZIndex: =2
+
+        VirticalListMenu_Title As label:
+            Color: =VerticalListMenu.TitleColor
+            Height: =VirticalListMenu_BackGround.Height
+            OnSelect: =Select(Parent)
+            Size: =VerticalListMenu.TitleFontSize
+            Text: =ThisItem.Title
+            Width: =Parent.Width - Self.X
+            X: =VirticalListMenu_Icon.X + VirticalListMenu_Icon.Width
+            Y: =VirticalListMenu_BackGround.Y
+            ZIndex: =3
+
+        VirticalListMenu_Icon As icon.Edit:
+            Color: =VerticalListMenu.TitleColor
+            Height: =VirticalListMenu_Title.Height
+            Icon: =ThisItem.Icon
+            OnSelect: =Select(Parent)
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =Self.Height
+            X: =VirticalListMenu_BackGround.X
+            Y: =VirticalListMenu_BackGround.Y
+            ZIndex: =4
+
+        VirticalListMenu_Image As image:
+            Height: =VirticalListMenu_Icon.Height
+            Image: =ThisItem.Image
+            OnSelect: =Select(Parent)
+            Width: =VirticalListMenu_Icon.Width
+            X: =VirticalListMenu_Icon.X
+            Y: =VirticalListMenu_Icon.Y
+            ZIndex: =5
+
+        VirticalListMenu_SelectIcon As icon.ChevronRight:
+            Color: =VerticalListMenu.TitleColor
+            Height: =VirticalListMenu_Title.Height
+            Icon: =Icon.ChevronRight
+            OnSelect: =VerticalListMenu.ListMenuBehavior()
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =Self.Height
+            X: =VirticalListMenu_Title.X + VirticalListMenu_Title.Width - Self.Width
+            Y: =VirticalListMenu_BackGround.Y
+            ZIndex: =6
+

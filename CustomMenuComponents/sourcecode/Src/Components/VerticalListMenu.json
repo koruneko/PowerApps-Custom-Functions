@@ -1,0 +1,123 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "VerticalListMenu",
+    "TemplateGuid": "73e7004a22984686833ec8dbb87527d9"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "ListMenuTitle",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "ListMenuTitle",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "Table of menus",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Icon\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Image\",\"Kind\":\"Image\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Title\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"_id\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 2,
+      "DisplayName": "ListMenuBehavior",
+      "Hidden": false,
+      "Name": "ListMenuBehavior",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Menu behavior",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "__Selected_id",
+      "Hidden": true,
+      "Name": "__Selected_id",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Selected ID",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TitleColor",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TitleColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Title color",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "BackGroundFill",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "BackGroundFill",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "BackGround fill",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TitleBackGroundFill",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TitleBackGroundFill",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "BackGround fill of the title",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TitleBackGroundBorderColor",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TitleBackGroundBorderColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Color of the outer frame of the title",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TitleBackGroundBorderThickness",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TitleBackGroundBorderThickness",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Thickness of the outer frame of the title",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "SeparationHeight",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "SeparationHeight",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Separation height",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TitleFontSize",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TitleFontSize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Title font size",
+      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPremiumPcfControl": false,
+  "LastModifiedTimestamp": "637580615342764527",
+  "Name": "73e7004a22984686833ec8dbb87527d9",
+  "OverridableProperties": {},
+  "Version": "637580615389842009"
+}

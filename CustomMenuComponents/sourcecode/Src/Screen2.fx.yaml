@@ -1,0 +1,13 @@
+Screen2 As screen:
+
+    ScreenLabel_2 As label:
+        Text: ="Screen2"
+        ZIndex: =1
+
+    BackBtn_2 As button:
+        OnSelect: =Back()
+        Text: ="戻る"
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =(Parent.Height - Self.Height) / 2
+        ZIndex: =2
+

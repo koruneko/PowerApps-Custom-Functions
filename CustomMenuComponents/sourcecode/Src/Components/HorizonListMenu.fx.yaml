@@ -1,0 +1,103 @@
+HorizonListMenu As CanvasComponent:
+    __Selected_id: =HorizonListMenu_Gallery.Selected._id
+    BackGroundFill: =RGBA(230, 78, 198, 0.2)
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =60
+    ListMenuBehavior: |-
+        =Switch(
+            Self.__Selected_id,
+            1, "Sample1",
+            2, "Sample2",
+            3, "Sample3"
+        )
+    ListMenuTitle: |-
+        =Table(
+            {_id:1, Icon:Icon.Edit, Title:"Sample1"},
+            {_id:2, Image:SampleImage, Title:"Sample2"},
+            {_id:3, Title:"Sample3"}
+        )
+    SeparationWidth: =1
+    TitleBackGroundBorderColor: =RGBA(255, 255, 255, 1)
+    TitleBackGroundBorderThickness: =3
+    TitleBackGroundFill: =RGBA(230, 78, 198, 1)
+    TitleColor: =RGBA(255, 255, 255, 1)
+    TitleFontSize: =15
+    Width: =960
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HorizonListMenu_Gallery As gallery.galleryHorizontal:
+        Fill: =Parent.BackGroundFill
+        Height: =Parent.Height
+        Items: =Parent.ListMenuTitle
+        TemplatePadding: =0
+        TemplateSize: |-
+            =// Item Width
+            Parent.TitleBackGroundBorderThickness / 2 + 
+              (Self.Height - Parent.TitleBackGroundBorderThickness) * 3 + 
+                Parent.TitleBackGroundBorderThickness / 2 + 
+                  // Separate thickness
+                  Parent.SeparationWidth
+        Width: =Parent.Width
+        ZIndex: =2
+
+        HorizonListMenu_Separation As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =Parent.Height
+            OnSelect: =Select(Parent)
+            Width: =HorizonListMenu.SeparationWidth
+            X: =HorizonListMenu_BackGround.X + HorizonListMenu_BackGround.Width + HorizonListMenu_BackGround.BorderThickness / 2
+            ZIndex: =1
+
+        HorizonListMenu_BackGround As rectangle:
+            BorderColor: =HorizonListMenu.TitleBackGroundBorderColor
+            BorderThickness: =HorizonListMenu.TitleBackGroundBorderThickness
+            Fill: =HorizonListMenu.TitleBackGroundFill
+            Height: =Parent.Height - HorizonListMenu.TitleBackGroundBorderThickness
+            OnSelect: =Select(Parent)
+            Width: =Self.Height * 3
+            X: =HorizonListMenu.TitleBackGroundBorderThickness / 2
+            Y: =HorizonListMenu.TitleBackGroundBorderThickness / 2
+            ZIndex: =2
+
+        HorizonListMenu_Title As label:
+            Color: =HorizonListMenu.TitleColor
+            Height: =HorizonListMenu_BackGround.Height
+            OnSelect: =Select(Parent)
+            Size: =HorizonListMenu.TitleFontSize
+            Text: =ThisItem.Title
+            Width: =HorizonListMenu_BackGround.Width - Self.X
+            X: =HorizonListMenu_Icon.X + HorizonListMenu_Icon.Width
+            Y: =HorizonListMenu_BackGround.Y
+            ZIndex: =3
+
+        HorizonListMenu_Icon As icon.Edit:
+            Color: =HorizonListMenu.TitleColor
+            Height: =HorizonListMenu_Title.Height
+            Icon: =ThisItem.Icon
+            OnSelect: =HorizonListMenu.ListMenuBehavior()
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =Self.Height
+            X: =HorizonListMenu_BackGround.X
+            Y: =HorizonListMenu_BackGround.Y
+            ZIndex: =4
+
+        HorizonListMenu_Image As image:
+            Height: =HorizonListMenu_Icon.Height
+            Image: |-
+                =// Icon もImage も設定されていない場合はSampleImage を表示
+                If(IsBlankOrError(ThisItem.Icon) && IsBlankOrError(ThisItem.Image), SampleImage, ThisItem.Image)
+            OnSelect: =HorizonListMenu.ListMenuBehavior()
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =HorizonListMenu_Icon.Width
+            X: =HorizonListMenu_Icon.X
+            Y: =HorizonListMenu_Icon.Y
+            ZIndex: =5
+
