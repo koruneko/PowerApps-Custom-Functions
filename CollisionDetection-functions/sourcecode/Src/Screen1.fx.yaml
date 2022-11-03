@@ -37,7 +37,7 @@ Screen1 As screen:
             (y_2 > y_1 && y_2 < y_1 + height_1))
 
     Image1 As image:
-        Height: =768
+        Height: =640
         Image: |-
             ="data:image/svg+xml,"& 
             EncodeUrl(
@@ -66,7 +66,7 @@ Screen1 As screen:
                     ) & "
                 </svg>"
             )
-        Width: =1366
+        Width: =1136
         ZIndex: =1
 
     Rectangle1 As rectangle:
@@ -80,23 +80,25 @@ Screen1 As screen:
         Width: =100
         X: =X
         Y: =Parent.Height - Y
-        ZIndex: =2
+        ZIndex: =3
 
     X As slider:
         Default: =Parent.Width / 2
+        HandleSize: =30
         Max: =Parent.Width
         Width: =Parent.Width
-        Y: =728
-        ZIndex: =3
+        Y: =600
+        ZIndex: =4
 
     Y As slider:
         Default: =Parent.Height / 2
+        HandleSize: =30
         Height: =Parent.Height
         Layout: =Layout.Vertical
         Max: =Parent.Height
         Width: =40
-        X: =1326
-        ZIndex: =4
+        X: =Parent.Width - Self.Width
+        ZIndex: =5
 
     Toggle1 As toggleSwitch:
         Default: |-
@@ -129,15 +131,17 @@ Screen1 As screen:
                 Value = true
             ) > 0
         Visible: =false
-        X: =40
-        Y: =40
-        ZIndex: =5
+        X: =80
+        Y: =80
+        ZIndex: =6
 
     Radio1 As radio:
         Default: ="Square"
+        Height: =162
         Items: =["Square", "Circle"]
-        Y: =608
-        ZIndex: =6
+        Width: =200
+        Y: =478
+        ZIndex: =7
 
     Circle1 As circle:
         Fill: |-
@@ -150,5 +154,5 @@ Screen1 As screen:
         Visible: =Radio1.Selected.Value = "Circle"
         X: =X
         Y: =Parent.Height - Y
-        ZIndex: =7
+        ZIndex: =8
 

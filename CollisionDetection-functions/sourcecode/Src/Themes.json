@@ -300,6 +300,26 @@
           "name": "DefaultSize2",
           "type": "n",
           "value": "13"
+        },
+        {
+          "name": "DropTargetBorderColor",
+          "type": "c",
+          "value": "RGBA(0, 0, 0, 1)"
+        },
+        {
+          "name": "DropTargetBackgroundColor",
+          "type": "c",
+          "value": "RGBA(255, 255, 255, 0.8)"
+        },
+        {
+          "name": "DropTargetTextColor",
+          "type": "c",
+          "value": "RGBA(0, 0, 0, 1)"
+        },
+        {
+          "name": "DropTargetBorderThickness",
+          "type": "n",
+          "value": "2"
         }
       ],
       "styles": [
@@ -2054,6 +2074,26 @@
             {
               "property": "NoAttachmentsPaddingLeft",
               "value": "%Palette.NoAttachmentPaddingLeft%"
+            },
+            {
+              "property": "DropTargetBorderThickness",
+              "value": "%Palette.DropTargetBorderThickness%"
+            },
+            {
+              "property": "DropTargetBorderStyle",
+              "value": "%BorderStyle.RESERVED%.Dotted"
+            },
+            {
+              "property": "DropTargetBorderColor",
+              "value": "%Palette.DropTargetBorderColor%"
+            },
+            {
+              "property": "DropTargetBackgroundColor",
+              "value": "%Palette.DropTargetBackgroundColor%"
+            },
+            {
+              "property": "DropTargetTextColor",
+              "value": "%Palette.DropTargetTextColor%"
             }
           ]
         },

@@ -137,7 +137,7 @@
       {
         "Category": "Data",
         "PropertyName": "CircleCircle",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Data",
@@ -177,7 +177,7 @@
       {
         "Category": "Data",
         "PropertyName": "SquareCircle",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -207,7 +207,7 @@
       {
         "Category": "Design",
         "PropertyName": "Fill",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       }
     ],
     "StyleName": "",

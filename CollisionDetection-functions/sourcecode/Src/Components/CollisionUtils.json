@@ -6,7 +6,7 @@
     "AllowCustomization": true,
     "Description": "",
     "Name": "CollisionUtils",
-    "TemplateGuid": "1890726d7eb64af183543250a6949f14"
+    "TemplateGuid": "4ceb6f519ea84ae89a7330ee4cc94f74"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
@@ -33,7 +33,7 @@
               "ScopeVariableName": "x_1"
             },
             "Tooltip": "X of Obj1",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareSquare_y_1",
@@ -48,7 +48,7 @@
               "ScopeVariableName": "y_1"
             },
             "Tooltip": "Y of Obj1",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareSquare_width_1",
@@ -63,7 +63,7 @@
               "ScopeVariableName": "width_1"
             },
             "Tooltip": "Width of Obj1",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareSquare_height_1",
@@ -78,7 +78,7 @@
               "ScopeVariableName": "height_1"
             },
             "Tooltip": "Height of Obj1",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareSquare_x_2",
@@ -93,7 +93,7 @@
               "ScopeVariableName": "x_2"
             },
             "Tooltip": "X of Obj2",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareSquare_y_2",
@@ -108,7 +108,7 @@
               "ScopeVariableName": "y_2"
             },
             "Tooltip": "y of Obj2",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareSquare_width_2",
@@ -123,7 +123,7 @@
               "ScopeVariableName": "width_2"
             },
             "Tooltip": "Width of Obj2",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareSquare_height_2",
@@ -138,12 +138,12 @@
               "ScopeVariableName": "height_2"
             },
             "Tooltip": "Height of Obj2",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "Square × Square",
-      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -167,7 +167,7 @@
               "ScopeVariableName": "x_1"
             },
             "Tooltip": "X of Obj1",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "CircleCircle_y_1",
@@ -182,7 +182,7 @@
               "ScopeVariableName": "y_1"
             },
             "Tooltip": "Y of Obj1",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "CircleCircle_r_1",
@@ -197,7 +197,7 @@
               "ScopeVariableName": "r_1"
             },
             "Tooltip": "Redius of Obj1",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "CircleCircle_x_2",
@@ -212,7 +212,7 @@
               "ScopeVariableName": "x_2"
             },
             "Tooltip": "X of Obj2",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "CircleCircle_y_2",
@@ -227,7 +227,7 @@
               "ScopeVariableName": "y_2"
             },
             "Tooltip": "Y of Obj2",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "CircleCircle_r_2",
@@ -242,12 +242,12 @@
               "ScopeVariableName": "r_2"
             },
             "Tooltip": "Redius of Obj2",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "Circle×Circle",
-      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -271,7 +271,7 @@
               "ScopeVariableName": "x_1"
             },
             "Tooltip": "X of Square",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareCircle_y_1",
@@ -286,7 +286,7 @@
               "ScopeVariableName": "y_1"
             },
             "Tooltip": "Y of Square",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareCircle_width",
@@ -301,7 +301,7 @@
               "ScopeVariableName": "width"
             },
             "Tooltip": "Width of Square",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareCircle_height",
@@ -316,7 +316,7 @@
               "ScopeVariableName": "height"
             },
             "Tooltip": "Height of Square",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareCircle_x_2",
@@ -331,7 +331,7 @@
               "ScopeVariableName": "x_2"
             },
             "Tooltip": "X of Circle",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareCircle_y_2",
@@ -346,7 +346,7 @@
               "ScopeVariableName": "y_2"
             },
             "Tooltip": "Y of Circle",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "SquareCircle_r",
@@ -361,12 +361,12 @@
               "ScopeVariableName": "r"
             },
             "Tooltip": "Radius of Circle",
-            "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "Square × Circle",
-      "Type": "{\"Version\":\"1.311\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -374,9 +374,12 @@
   "IsComponentLocked": false,
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
   "IsPremiumPcfControl": false,
-  "LastModifiedTimestamp": "637579498588548772",
-  "Name": "1890726d7eb64af183543250a6949f14",
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638030473187352103",
+  "Name": "4ceb6f519ea84ae89a7330ee4cc94f74",
   "OverridableProperties": {},
-  "Version": "637579503324394502"
+  "TemplateOriginalName": "1890726d7eb64af183543250a6949f14",
+  "Version": "637644725462015529"
 }
